@@ -43,10 +43,10 @@ export const About = () => {
                 technology.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Alongside working in banking tech, I co-founded a startup as
-                CTO, where I built and shipped AI powered web products for
-                university students, spending much of that time focused on
-                mobile development and fast iteration.
+                I started my corporate career working in banking tech, where I
+                spent my time on mobile development. Alongside, I co-founded an
+                ed-startup, where I built and shipped AI powered web products
+                for university students applying for jobs.
               </p>
             </div>
 
