@@ -57,7 +57,7 @@ export const Hero = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="flex items-center justify-center gap-6 mb-12">
             <a
-              href="https://github.com"
+              href="https://github.com/sommykene"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -65,7 +65,7 @@ export const Hero = () => {
               <Github size={24} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/someagwuegbo/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
