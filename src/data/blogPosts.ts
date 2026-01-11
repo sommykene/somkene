@@ -8,7 +8,9 @@ export interface BlogPost {
   tags: string[];
 }
 
-export const blogPosts: BlogPost[] = [
+export const blogPosts: BlogPost[] = [];
+
+const blogPostss: BlogPost[] = [
   {
     slug: "building-for-the-future",
     title: "Building for the Future: Thoughts on Sustainable Code",

@@ -29,6 +29,9 @@ const Blog = () => {
           </motion.div>
 
           <div className="max-w-3xl mx-auto space-y-6">
+            <h2 className="text-xl md:text-2xl font-display font-semibold text-center text-foreground mb-3 group-hover:text-primary transition-colors">
+              Coming soon...
+            </h2>
             {blogPosts.map((post, index) => (
               <BlogCard key={post.slug} post={post} index={index} />
             ))}
