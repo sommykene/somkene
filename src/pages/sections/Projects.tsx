@@ -18,7 +18,7 @@ export const Projects = () => {
           className="text-center mb-16">
           <p className="text-primary font-medium mb-3">Featured Work</p>
           <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-            Projects I've built
+            Projects I've built or worked on
           </h2>
         </motion.div>
 

@@ -1,3 +1,4 @@
+import TikTokIcon from "@/components/TikTokIcon";
 import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, Twitter } from "lucide-react";
 
@@ -72,12 +73,12 @@ export const Hero = () => {
               <Linkedin size={24} />
             </a>
             <a
-              href="https://twitter.com"
+              href="https://www.tiktok.com/@som.kene"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
-              aria-label="Twitter">
-              <Twitter size={24} />
+              aria-label="TikTok">
+              <TikTokIcon size={24} />
             </a>
           </motion.div>
 

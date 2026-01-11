@@ -1,4 +1,6 @@
 import { Github, Linkedin, Twitter, Mail } from "lucide-react";
+import tiktok from "../../assets/tiktok.svg";
+import TikTokIcon from "@/components/TikTokIcon";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -15,38 +17,28 @@ export const Footer = () => {
 
           <div className="flex items-center gap-6">
             <a
-              href="https://github.com"
+              href="https://github.com/sommykene"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
-              aria-label="GitHub"
-            >
+              aria-label="GitHub">
               <Github size={20} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/someagwuegbo/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
-              aria-label="LinkedIn"
-            >
+              aria-label="LinkedIn">
               <Linkedin size={20} />
             </a>
             <a
-              href="https://twitter.com"
+              href="https://www.tiktok.com/@som.kene"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
-              aria-label="Twitter"
-            >
-              <Twitter size={20} />
-            </a>
-            <a
-              href="mailto:hello@somkene.co.uk"
-              className="text-muted-foreground hover:text-primary transition-colors"
-              aria-label="Email"
-            >
-              <Mail size={20} />
+              aria-label="TikTok">
+              <TikTokIcon />
             </a>
           </div>
         </div>

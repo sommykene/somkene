@@ -34,30 +34,43 @@ export const ProjectCard = ({
             {project.title}
           </h3>
           <div className="flex gap-3">
-            <a
-              href={project.githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors"
-              aria-label={`View ${project.title} on GitHub`}>
-              <Github size={20} />
-            </a>
-            <a
-              href={project.liveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors"
-              aria-label={`View ${project.title} live`}>
-              <ExternalLink size={20} />
-            </a>
+            {project.githubUrl && (
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+                aria-label={`View ${project.title} on GitHub`}>
+                <Github size={20} />
+              </a>
+            )}
+            {project.liveUrl && (
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+                aria-label={`View ${project.title} live`}>
+                <ExternalLink size={20} />
+              </a>
+            )}
           </div>
         </div>
 
-        <p className="text-muted-foreground mb-6 leading-relaxed">
+        <p className="text-muted-foreground mb-6 leading-relaxed whitespace-pre-wrap">
           {project.description}
         </p>
 
+        <p className="text-muted-foreground mb-6 font-bold text-xs leading-relaxed whitespace-pre-wrap">
+          {project.years}
+        </p>
+
         <div className="flex flex-wrap gap-2">
+          <span
+            key={project.type}
+            className="px-3 py-1 bg-rose-300 text-secondary-foreground rounded-full text-xs font-medium">
+            {project.type}
+          </span>
           {project.tech.map((tech) => (
             <span
               key={tech}
